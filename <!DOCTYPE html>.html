@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOCOTEM COOP-CA - Ensemble pour l'Excellence et le Développement</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .btn-primary { @apply bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-lg transition; }
+        .btn-secondary { @apply border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-blue-900 font-bold py-3 px-8 rounded-lg transition; }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .card-hover { transition: transform 0.3s, box-shadow 0.3s; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(30, 111, 255, 0.1); }
+        .bg-navy { background-color: #070D1F; }
+        svg.icon { width: 24px; height: 24px; }
+        svg.icon-lg { width: 32px; height: 32px; }
+        svg.icon-xl { width: 48px; height: 48px; }
+        .pole-card { background: linear-gradient(135deg, var(--pole-color-light) 0%, var(--pole-color) 100%); }
+    </style>
+</head>
+<body class="bg-white">
+
+<!-- HEADER -->
+<header class="sticky top-0 z-50 bg-navy shadow-lg">
+    <nav class="navbar max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="navbar-start">
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center">
+                    <span class="text-blue-900 font-bold">S</span>
+                </div>
+                <span class="text-white font-bold text-lg hidden sm:inline">SOCOTEM</span>
+            </a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-white gap-4">
+                <li><a href="#hero" class="hover:text-yellow-500">Accueil</a></li>
+                <li><a href="#qui-sommes-nous" class="hover:text-yellow-500">À propos</a></li>
+                <li><a href="#poles" class="hover:text-yellow-500">Services</a></li>
+                <li><a href="#formations" class="hover:text-yellow-500">Formations</a></li>
+                <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end gap-2">
+            <a href="#adhesion" class="btn btn-sm btn-warning hidden sm:inline-flex">Adhérer</a>
+            <div class="dropdown dropdown-end lg:hidden">
+                <button class="btn btn-ghost btn-circle text-white">☰</button>
+                <ul class="dropdown-content z-[1] menu p-2 shadow bg-navy rounded-box w-52 text-white">
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#qui-sommes-nous">À propos</a></li>
+                    <li><a href="#poles">Services</a></li>
+                    <li><a href="#formations">Formations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#adhesion" class="text-yellow-500">Adhérer</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero" class="relative min-h-screen bg-gradient-to-r from-blue-900 to-blue-600 flex items-center">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 fade-in">
+            Ensemble pour l'Excellence et le Développement
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-200 mb-8 max-w-2xl mx-auto fade-in" style="animation-delay: 0.2s;">
+            Rejoignez une communauté de techniciens modernes qui façonnent l'avenir de Kinshasa par la formation, l'innovation et l'entrepreneuriat.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in" style="animation-delay: 0.4s;">
+            <a href="#adhesion" class="btn-primary">Adhérer maintenant</a>
+            <a href="#qui-sommes-nous" class="btn-secondary">En savoir plus ↓</a>
+        </div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="bg-navy py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-white mb-12">Nos Chiffres en 2026</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="text-center">
+                <div class="text-4xl font-bold text-yellow-500 mb-2">100+</div>
+                <p class="text-gray-300">Membres Actifs</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl font-bold text-yellow-500 mb-2">50</div>
+                <p class="text-gray-300">Formations</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl font-bold text-yellow-500 mb-2">30</div>
+                <p class="text-gray-300">Startups</p>
+            </div>
+            <div class="text-center">
+                <div class="text-4xl font-bold text-yellow-500 mb-2">75</div>
+                <p class="text-gray-300">Femmes Autonomisées</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- QUI SOMMES-NOUS -->
+<section id="qui-sommes-nous" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="bg-gradient-to-br from-blue-100 to-blue-50 rounded-lg p-8 h-64 flex items-center justify-center">
+                <p class="text-blue-900 font-bold text-center">Photo/Image des Ateliers SOCOTEM</p>
+            </div>
+            <div>
+                <h2 class="text-3xl sm:text-4xl font-bold text-blue-900 mb-6">Une Coopérative au Service de l'Excellence</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    SOCOTEM COOP-CA réunit les techniciens modernes et artisans de l'art immobilier afin de concourir ensemble à la lutte contre la pauvreté par la formation, l'accompagnement entrepreneurial et l'innovation.
+                </p>
+                <div class="bg-blue-50 border-l-4 border-yellow-500 p-6 my-6">
+                    <p class="text-blue-900 font-semibold mb-2">Notre Vision :</p>
+                    <p class="text-gray-700">Être une référence en matière de formation, d'innovation et d'entrepreneuriat technique moderne pour un développement durable et inclusif.</p>
+                </div>
+                <div class="grid grid-cols-3 gap-4 mt-8">
+                    <div class="text-center">
+                        <div class="text-3xl mb-2">🎓</div>
+                        <p class="text-sm text-gray-600">Formation</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl mb-2">💡</div>
+                        <p class="text-sm text-gray-600">Innovation</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl mb-2">🤝</div>
+                        <p class="text-sm text-gray-600">Solidarité</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NOS 5 VALEURS -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Nos 5 Piliers</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div class="card bg-white shadow-md card-hover text-center p-6">
+                <div class="text-3xl mb-4">🤝</div>
+                <h3 class="font-bold text-blue-900 text-lg mb-2">Solidarité</h3>
+                <p class="text-sm text-gray-600">Ensemble pour le bien collectif</p>
+            </div>
+            <div class="card bg-white shadow-md card-hover text-center p-6">
+                <div class="text-3xl mb-4">⭐</div>
+                <h3 class="font-bold text-blue-900 text-lg mb-2">Professionnalisme</h3>
+                <p class="text-sm text-gray-600">Excellence dans chaque action</p>
+            </div>
+            <div class="card bg-white shadow-md card-hover text-center p-6">
+                <div class="text-3xl mb-4">💡</div>
+                <h3 class="font-bold text-blue-900 text-lg mb-2">Innovation</h3>
+                <p class="text-sm text-gray-600">Techniques modernes et durables</p>
+            </div>
+            <div class="card bg-white shadow-md card-hover text-center p-6">
+                <div class="text-3xl mb-4">👥</div>
+                <h3 class="font-bold text-blue-900 text-lg mb-2">Travail d'Équipe</h3>
+                <p class="text-sm text-gray-600">Force collective pour réussir</p>
+            </div>
+            <div class="card bg-white shadow-md card-hover text-center p-6">
+                <div class="text-3xl mb-4">🌍</div>
+                <h3 class="font-bold text-blue-900 text-lg mb-2">Responsabilité</h3>
+                <p class="text-sm text-gray-600">Développement durable</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LES 10 PÔLES DE SERVICES -->
+<section id="poles" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-4">Les 10 Pôles de Services</h2>
+        <p class="text-center text-gray-600 mb-16">L'EXPERTISE LOCALE, NOTRE FIERTÉ – BÂTIR L'AVENIR ENSEMBLE</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <!-- PÔLE 1 -->
+            <div class="card bg-gradient-to-br from-blue-100 to-blue-600 text-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="text-4xl font-bold mb-3">1</div>
+                    <h3 class="card-title text-lg mb-3">Conception & Étude</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Architecture</li>
+                        <li>• Design technique</li>
+                        <li>• Génie civil</li>
+                        <li>• Topographie</li>
+                        <li>• Design intérieur</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PÔLE 2 -->
+            <div class="card bg-gradient-to-br from-orange-100 to-orange-600 text-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="text-4xl font-bold mb-3">2</div>
+                    <h3 class="card-title text-lg mb-3">Gros Œuvre</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Maçonnerie</li>
+                        <li>• Coffrage & béton</li>
+                        <li>• Ferraillage</li>
+                        <li>• Charpente</li>
+                        <li>• Gestion de chantier</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PÔLE 3 -->
+            <div class="card bg-gradient-to-br from-green-100 to-green-600 text-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="text-4xl font-bold mb-3">3</div>
+                    <h3 class="card-title text-lg mb-3">Second Œuvre (Technique)</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Électricité bâtiment</li>
+                        <li>• Plomberie & sanitaires</li>
+                        <li>• Climatisation (HVAC)</li>
+                        <li>• Réseaux & fibre</li>
+                        <li>• Domotique</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PÔLE 4 -->
+            <div class="card bg-gradient-to-br from-purple-100 to-purple-600 text-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="text-4xl font-bold mb-3">4</div>
+                    <h3 class="card-title text-lg mb-3">Finition & Décoration</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Peinture bâtiment</li>
+                        <li>• Carrelage</li>
+                        <li>• Plâtrerie</li>
+                        <li>• Menuiserie bois</li>
+                        <li>• Vitrerie</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PÔLE 5 -->
+            <div class="card bg-gradient-to-br from-pink-100 to-pink-600 text-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="text-4xl font-bold mb-3">5</div>
+                    <h3 class="card-title text-lg mb-3">Fabrication & Ameublement</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Ébénisterie</li>
+                        <li>• Meubles bois/métal</li>
+                        <li>• Cuisines modernes</li>
+                        <li>• Dressing</li>
+                        <li>• Design mobilier</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PÔLE 6 -->
+            <div class="card bg-gradient-to-br from-yellow-100 to-yellow-600 text-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="text-4xl font-bold mb-3">6</div>
+                    <h3 class="card-title text-lg mb-3">Métallurgie & Aluminium</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Soudure (inox)</li>
+                        <li>• Garde-corps</li>
+                        <li>• Structures métalliques</li>
+                        <li>• Aluminium & verre</li>
+                        <li>• Montage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PÔLE 7 -->
+            <div class="card bg-gradient-to-br from-teal-100 to-teal-600 text-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="text-4xl font-bold mb-3">7</div>
+                    <h3 class="card-title text-lg mb-3">Maintenance & Rénovation</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Maintenance technique</li>
+                        <li>• Rénovation</li>
+                        <li>• Étanchéité (toiture)</li>
+                        <li>• Nettoyage façade</li>
+                        <li>• Réparation plomberie</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PÔLE 8 -->
+            <div class="card bg-gradient-to-br from-indigo-100 to-indigo-600 text-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="text-4xl font-bold mb-3">8</div>
+                    <h3 class="card-title text-lg mb-3">Forages d'Eau</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Forage de puits</li>
+                        <li>• Hydrogéologie</li>
+                        <li>• Traitement eau</li>
+                        <li>• Maintenance</li>
+                        <li>• Installation pompes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PÔLE 9 -->
+            <div class="card bg-gradient-to-br from-red-100 to-red-600 text-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="text-4xl font-bold mb-3">9</div>
+                    <h3 class="card-title text-lg mb-3">Fabrication Briques & Blocs</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Briques pleines</li>
+                        <li>• Pavés</li>
+                        <li>• Blocs creux</li>
+                        <li>• Produits résistants</li>
+                        <li>• Qualité certifiée</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PÔLE 10 -->
+            <div class="card bg-gradient-to-br from-lime-100 to-lime-600 text-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="text-4xl font-bold mb-3">10</div>
+                    <h3 class="card-title text-lg mb-3">Fabrication Peintures</h3>
+                    <ul class="text-sm space-y-1">
+                        <li>• Peintures intérieures</li>
+                        <li>• Peintures extérieures</li>
+                        <li>• Émail & apprêts</li>
+                        <li>• Couleurs durables</li>
+                        <li>• Qualité garantie</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROCESSUS COMPLET -->
+        <div class="mt-16 bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg p-8 text-white">
+            <h3 class="text-2xl font-bold mb-8 text-center">Une Solution Complète, du Début à la Fin !</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+                <div class="text-center">
+                    <div class="text-3xl mb-2">📐</div>
+                    <p class="text-sm font-semibold">Conception</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl">→</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">🏗️</div>
+                    <p class="text-sm font-semibold">Gros Œuvre</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl">→</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">⚙️</div>
+                    <p class="text-sm font-semibold">Second Œuvre</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl">→</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">🎨</div>
+                    <p class="text-sm font-semibold">Finition</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-2xl">→</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl mb-2">✅</div>
+                    <p class="text-sm font-semibold">Clés en Main</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SUCCESS STORIES -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Histoires de Réussite</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card bg-white shadow-lg">
+                <div class="card-body">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="avatar placeholder">
+                            <div class="bg-yellow-500 text-blue-900 rounded-full w-12 font-bold flex items-center justify-center">JK</div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-blue-900">Jean Kipwa</h3>
+                            <p class="text-sm text-gray-500">Menuisier</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"Grâce à SOCOTEM, j'ai modernisé mon atelier et doublé mes revenus."</p>
+                    <div class="flex gap-1">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg">
+                <div class="card-body">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="avatar placeholder">
+                            <div class="bg-yellow-500 text-blue-900 rounded-full w-12 font-bold flex items-center justify-center">AM</div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-blue-900">Amara Mulongo</h3>
+                            <p class="text-sm text-gray-500">Entrepreneur</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"La formation m'a donné les compétences pour créer ma startup."</p>
+                    <div class="flex gap-1">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg">
+                <div class="card-body">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="avatar placeholder">
+                            <div class="bg-yellow-500 text-blue-900 rounded-full w-12 font-bold flex items-center justify-center">LM</div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-blue-900">Lydia Makasi</h3>
+                            <p class="text-sm text-gray-500">Femme Artisan</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4 italic">"SOCOTEM m'a permise de devenir indépendante financièrement."</p>
+                    <div class="flex gap-1">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ADHÉSION -->
+<section id="adhesion" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Adhérer à SOCOTEM</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Physique -->
+            <div class="card bg-white shadow-lg border-2 border-yellow-500 card-hover">
+                <div class="card-body">
+                    <h3 class="card-title text-blue-900 text-lg mb-2">Personne Physique</h3>
+                    <div class="text-3xl font-bold text-yellow-500 mb-4">50$</div>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6 flex-grow">
+                        <li>✓ Accès aux formations</li>
+                        <li>✓ Réseau professionnel</li>
+                        <li>✓ Partage de connaissances</li>
+                        <li>✓ Support technique</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary w-full text-center">Adhérer</a>
+                </div>
+            </div>
+
+            <!-- Morale -->
+            <div class="card bg-blue-900 shadow-lg border-2 border-yellow-500 card-hover lg:transform lg:scale-105">
+                <div class="card-body">
+                    <h3 class="card-title text-yellow-500 text-lg mb-2">Personne Morale</h3>
+                    <div class="text-3xl font-bold text-yellow-500 mb-4">100$</div>
+                    <ul class="text-sm text-gray-300 space-y-2 mb-6 flex-grow">
+                        <li>✓ Tous les avantages</li>
+                        <li>✓ Représentation</li>
+                        <li>✓ Collaboration spéciale</li>
+                        <li>✓ Priorité soutien</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-warning w-full">Adhérer</a>
+                </div>
+            </div>
+
+            <!-- Honneur -->
+            <div class="card bg-white shadow-lg border-2 border-gray-300 card-hover">
+                <div class="card-body">
+                    <h3 class="card-title text-blue-900 text-lg mb-2">Membre d'Honneur</h3>
+                    <div class="text-3xl font-bold text-gray-400 mb-4">Invitation</div>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6 flex-grow">
+                        <li>✓ Prestige & reconnaissance</li>
+                        <li>✓ Logo SOCOTEM</li>
+                        <li>✓ Support spécial</li>
+                        <li>✓ Événements exclusifs</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary w-full text-center">Nous Contacter</a>
+                </div>
+            </div>
+
+            <!-- Partenaire -->
+            <div class="card bg-white shadow-lg border-2 border-gray-300 card-hover">
+                <div class="card-body">
+                    <h3 class="card-title text-blue-900 text-lg mb-2">Partenaire</h3>
+                    <div class="text-3xl font-bold text-gray-400 mb-4">À discuter</div>
+                    <ul class="text-sm text-gray-600 space-y-2 mb-6 flex-grow">
+                        <li>✓ Collaboration maximale</li>
+                        <li>✓ Ressources partagées</li>
+                        <li>✓ Réseau international</li>
+                        <li>✓ Co-projets</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary w-full text-center">Nous Contacter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FORMATIONS -->
+<section id="formations" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Formations à Venir</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="card bg-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="badge badge-primary mb-4 bg-blue-500 text-white">📅 15 Août 2026</div>
+                    <h3 class="card-title text-blue-900 text-lg mb-4">Formation Web</h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        <strong>15 places</strong> | <strong>300$</strong> | <strong>40h</strong>
+                    </p>
+                    <button class="btn btn-warning w-full">S'inscrire</button>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="badge badge-primary mb-4 bg-blue-500 text-white">📅 22 Août 2026</div>
+                    <h3 class="card-title text-blue-900 text-lg mb-4">Menuiserie Avancée</h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        <strong>20 places</strong> | <strong>250$</strong> | <strong>50h</strong>
+                    </p>
+                    <button class="btn btn-warning w-full">S'inscrire</button>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg card-hover">
+                <div class="card-body">
+                    <div class="badge badge-primary mb-4 bg-blue-500 text-white">📅 29 Août 2026</div>
+                    <h3 class="card-title text-blue-900 text-lg mb-4">Électricité Bâtiment</h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        <strong>12 places</strong> | <strong>280$</strong> | <strong>45h</strong>
+                    </p>
+                    <button class="btn btn-warning w-full">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA PRINCIPAL -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-navy">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6">Prêt à Rejoindre la Communauté ?</h2>
+        <p class="text-lg text-gray-300 mb-12">Ensemble, construisons l'avenir de Kinshasa. Rejoignez SOCOTEM et transformez votre potentiel en réalité.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <a href="#adhesion" class="btn-primary">Adhérer Maintenant</a>
+            <a href="#contact" class="btn-secondary">Nous Contacter</a>
+        </div>
+        <p class="text-yellow-500 font-semibold text-lg">
+            Ou appelez-nous : <a href="tel:+243818762129" class="hover:underline">+243 81 87 62 129</a>
+        </p>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-12">Questions Fréquentes</h2>
+        <div class="space-y-4">
+            <div class="collapse collapse-arrow border border-base-300">
+                <input type="radio" name="faq" checked="checked" />
+                <div class="collapse-title text-blue-900 font-bold text-lg">Comment adhérer à SOCOTEM ?</div>
+                <div class="collapse-content bg-gray-50">
+                    <p class="text-gray-700">Remplissez le formulaire d'adhésion, sélectionnez votre type de membre, payez les frais et recevez votre confirmation par email.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border border-base-300">
+                <input type="radio" name="faq" />
+                <div class="collapse-title text-blue-900 font-bold text-lg">Quels sont les avantages ?</div>
+                <div class="collapse-content bg-gray-50">
+                    <p class="text-gray-700">Accès aux formations, réseau professionnel, support technique, facilitation d'achat de matériels et événements exclusifs.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border border-base-300">
+                <input type="radio" name="faq" />
+                <div class="collapse-title text-blue-900 font-bold text-lg">Comment s'inscrire à une formation ?</div>
+                <div class="collapse-content bg-gray-50">
+                    <p class="text-gray-700">Consultez le calendrier, cliquez sur "S'inscrire", remplissez vos informations et effectuez le paiement. Confirmation par email.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow border border-base-300">
+                <input type="radio" name="faq" />
+                <div class="collapse-title text-blue-900 font-bold text-lg">Puis-je être partenaire ?</div>
+                <div class="collapse-content bg-gray-50">
+                    <p class="text-gray-700">Oui ! Contactez-nous pour discuter d'opportunités de collaboration adaptées à votre organisation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-12">Nous Contacter</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Formulaire -->
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-blue-900 mb-6">Envoyez-nous un Message</h3>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Nom complet" class="input input-bordered w-full" />
+                    <input type="email" placeholder="Email" class="input input-bordered w-full" />
+                    <input type="tel" placeholder="Téléphone" class="input input-bordered w-full" />
+                    <textarea placeholder="Message..." class="textarea textarea-bordered w-full h-32"></textarea>
+                    <button type="submit" class="btn-primary w-full">Envoyer</button>
+                </form>
+            </div>
+
+            <!-- Infos -->
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-6">Nos Coordonnées</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-bold text-blue-900">📍 Adresse</p>
+                            <p class="text-gray-600">Avenue Saint-Christophe N°1089<br/>Q/Funa, C/Limete<br/>Kinshasa, RDC</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-blue-900">📞 Téléphone</p>
+                            <p class="text-gray-600"><a href="tel:+243818762129" class="hover:text-yellow-500">+243 81 87 62 129</a></p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-blue-900">📧 Email</p>
+                            <p class="text-gray-600"><a href="mailto:contact@socotem-scoops.cd" class="hover:text-yellow-500">contact@socotem-scoops.cd</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-blue-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h3 class="font-bold text-yellow-500 text-lg mb-4">À Propos</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#qui-sommes-nous" class="hover:text-yellow-500">Qui sommes-nous</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Notre histoire</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Nos valeurs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-yellow-500 text-lg mb-4">Services</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#formations" class="hover:text-yellow-500">Formations</a></li>
+                    <li><a href="#poles" class="hover:text-yellow-500">Nos 10 Pôles</a></li>
+                    <li><a href="#" class="hover:text-yellow-500">Partenariats</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-yellow-500 text-lg mb-4">Adhésion</h3>
+                <ul class="space-y-2 text-gray-400 text-sm">
+                    <li><a href="#adhesion" class="hover:text-yellow-500">Types de membres</a></li>
+                    <li><a href="#adhesion" class="hover:text-yellow-500">Tarifs</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold text-yellow-500 text-lg mb-4">Suivez-nous</h3>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-yellow-500">Facebook</a>
+                    <a href="#" class="hover:text-yellow-500">LinkedIn</a>
+                    <a href="#" class="hover:text-yellow-500">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 py-8 text-center text-gray-400 text-sm">
+            <p class="mb-2">SOCOTEM COOP-CA | Kinshasa, RDC | +243 81 87 62 129</p>
+            <p>© <span id="year">2026</span> SOCOTEM COOP-CA. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+
+</body>
+</html>
