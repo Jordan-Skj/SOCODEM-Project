@@ -90,6 +90,22 @@
       width: 48px;
       height: 48px;
     }
+
+
+    .partner-logo {
+      filter: grayscale(100%);
+      transition: filter 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .partner-logo:hover {
+      filter: grayscale(0%);
+      transform: scale(1.1);
+    }
+
+    .carousel-item {
+      flex-shrink: 0;
+    }
   </style>
 </head>
 
@@ -183,16 +199,16 @@
           <p class="text-gray-300">Membres Actifs</p>
         </div>
         <div class="text-center">
-          <div class="counter text-4xl font-bold text-yellow-500 mb-2" data-target="50">0</div>
+          <div class="counter text-4xl font-bold text-yellow-500 mb-2" data-target="8">0</div>
           <p class="text-gray-300">Formations Organisées</p>
         </div>
         <div class="text-center">
-          <div class="counter text-4xl font-bold text-yellow-500 mb-2" data-target="30">0</div>
-          <p class="text-gray-300">Startups Accompagnées</p>
+          <div class="counter text-4xl font-bold text-yellow-500 mb-2" data-target="6">0</div>
+          <p class="text-gray-300">Partenaires</p>
         </div>
         <div class="text-center">
-          <div class="counter text-4xl font-bold text-yellow-500 mb-2" data-target="20">0</div>
-          <p class="text-gray-300">Femmes Autonomisées</p>
+          <div class="counter text-4xl font-bold text-yellow-500 mb-2" data-target="50">0+</div>
+          <p class="text-gray-300">Clients Satisfaits</p>
         </div>
       </div>
     </div>
@@ -207,24 +223,33 @@
             data-aos-duration="800">
         </div>
         <div>
-          <h2 class="text-3xl sm:text-4xl font-bold text-blue-900 mb-6" data-aos="fade-up">Une Coopérative au Service de
-            l'Excellence</h2>
+          <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-blue-900 mb-6" data-aos="fade-up">Une La Plateforme
+            de Référence des Techniciens Modernes</h2>
           <p class="text-gray-700 mb-4 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
-            SOCOTEM COOP-CA réunit les techniciens modernes et artisans de l'art immobilier afin de concourir ensemble à
-            la lutte contre la pauvreté par la formation, l'accompagnement entrepreneurial et l'innovation.
+            SOCOTEM COOP-CA est le regroupement de techniciens qualifiés, d'artisans spécialisés et de professionnels
+            des métiers techniques modernes.
+          </p>
+          <p class="text-gray-700 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+            Notre mission est de fournir des services techniques de qualité, de
+            faciliter
+            l'accès à des équipements de dernière génération et de contribuer au développement professionnel de nos
+            membres
+            et à l'émergence économique du Congo.
           </p>
           <div class="bg-blue-50 border-l-4 border-yellow-500 p-6 my-6" data-aos="fade-up" data-aos-delay="200">
             <p class="text-blue-900 font-semibold mb-2">Notre Vision :</p>
-            <p class="text-gray-700">Être une référence en matière de formation, d'innovation et d'entrepreneuriat
-              technique moderne pour un développement durable et inclusif.</p>
+            <p class="text-gray-700">Devenir la plateforme de référence en RDC pour les services techniques
+              et l'innovation. L'adresse incontournable où trouver des techniciens
+              qualifiés, professionnels et fiables, capables de réaliser des projets
+              aux normes internationales.</p>
           </div>
           <div class="grid grid-cols-3 gap-4 mt-8" data-aos="fade-up" data-aos-delay="300">
             <div class="text-center">
               <svg class="icon-lg text-yellow-500 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
                 <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                  d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
               </svg>
-              <p class="text-sm text-gray-600">Formation Qualifiante</p>
+              <p class="text-sm text-gray-600">Techniciens Qualifiés</p>
             </div>
             <div class="text-center">
               <svg class="icon-lg text-yellow-500 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
@@ -235,10 +260,9 @@
             </div>
             <div class="text-center">
               <svg class="icon-lg text-yellow-500 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z" />
+                <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2zm-2 12H4V4h14v10z" />
               </svg>
-              <p class="text-sm text-gray-600">Solidarité</p>
+              <p class="text-sm text-gray-600">Équipements Modernes</p>
             </div>
           </div>
         </div>
@@ -314,8 +338,8 @@
   <!-- SECTION 5: NOS 8 AXES D'INTERVENTION -->
   <section id="axes" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
     <div class="max-w-7xl mx-auto">
- <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-4">Les 10 Pôles de Services</h2>
-        <p class="text-center text-gray-600 mb-16">L'EXPERTISE LOCALE, NOTRE FIERTÉ – BÂTIR L'AVENIR ENSEMBLE</p>
+      <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-4">Les 10 Pôles de Services</h2>
+      <p class="text-center text-gray-600 mb-16">L'EXPERTISE LOCALE, NOTRE FIERTÉ – BÂTIR L'AVENIR ENSEMBLE</p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
         <!-- Carte 1 -->
@@ -464,7 +488,7 @@
         </div>
 
         <!-- Carte 9-->
-         <div class="card bg-white shadow-lg card-hover" data--aos="zoom-in-left" data-aos-duration="800">
+        <div class="card bg-white shadow-lg card-hover" data--aos="zoom-in-left" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service_9.jpeg" alt="Fabrication de briques, pavés et blocs" />
           </figure>
@@ -478,10 +502,10 @@
             </ul>
             <a href="#contact" class="text-yellow-500 font-semibold text-sm hover:underline">En savoir plus →</a>
           </div>
-         </div>
+        </div>
 
-         <!-- Carte 10 -->
-         <div class="card bg-white shadow-lg card-hover" data--aos="zoom-in-left" data-aos-duration="800">
+        <!-- Carte 10 -->
+        <div class="card bg-white shadow-lg card-hover" data--aos="zoom-in-right" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service_10.jpg" alt="Fabrication de peintures" />
           </figure>
@@ -495,18 +519,18 @@
             </ul>
             <a href="#contact" class="text-yellow-500 font-semibold text-sm hover:underline">En savoir plus →</a>
           </div>
-         </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- SECTION 6: SUCCESS STORIES -->
-  <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+  <!-- <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
     <div class="max-w-7xl mx-auto">
       <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Histoires de Réussite</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Témoignage 1 -->
-        <div class="card bg-white shadow-lg">
+        
+        <div class="card bg-white shadow-lg" data-aos="fade-up" data-aos-duration="800">
           <div class="card-body">
             <div class="flex items-center gap-3 mb-4">
               <div class="avatar placeholder">
@@ -546,8 +570,7 @@
           </div>
         </div>
 
-        <!-- Témoignage 2 -->
-        <div class="card bg-white shadow-lg">
+        <div class="card bg-white shadow-lg" data-aos="fade-up">
           <div class="card-body">
             <div class="flex items-center gap-3 mb-4">
               <div class="avatar placeholder">
@@ -587,8 +610,7 @@
           </div>
         </div>
 
-        <!-- Témoignage 3 -->
-        <div class="card bg-white shadow-lg">
+        <div class="card bg-white shadow-lg" data-aos="fade-up">
           <div class="card-body">
             <div class="flex items-center gap-3 mb-4">
               <div class="avatar placeholder">
@@ -630,14 +652,16 @@
       </div>
     </div>
   </section>
+-->
 
   <!-- SECTION 7: ADHÉSION / TYPES DE MEMBRES -->
-  <section id="adhesion" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  <section id="adhesion" class="py-20 px-4 sm:px-6 lg:px-8 bg-white bg-gray-50">
     <div class="max-w-7xl mx-auto">
       <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Adhérer à SOCOTEM</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <!-- Personne Physique -->
-        <div class="card bg-white shadow-lg border-2 border-yellow-500 card-hover">
+        <div class="card bg-white shadow-lg border-2 border-yellow-500 card-hover" data-aos="fade-down-right"
+          data-aos-duration="800">
           <div class="card-body">
             <h3 class="card-title text-blue-900 text-lg mb-2">Personne Physique</h3>
             <div class="text-3xl font-bold text-yellow-500 mb-4">50$</div>
@@ -672,7 +696,8 @@
         </div>
 
         <!-- Personne Morale -->
-        <div class="card bg-blue-900 shadow-lg border-2 border-yellow-500 card-hover lg:transform lg:scale-105">
+        <div class="card bg-blue-900 shadow-lg border-2 border-yellow-500 card-hover lg:transform lg:scale-105"
+          data-aos="fade-down-left" data-aos-duration="800">
           <div class="card-body">
             <h3 class="card-title text-yellow-500 text-lg mb-2">Personne Morale</h3>
             <div class="text-3xl font-bold text-yellow-500 mb-4">100$</div>
@@ -707,7 +732,8 @@
         </div>
 
         <!-- Membre d'Honneur -->
-        <div class="card bg-white shadow-lg border-2 border-gray-300 card-hover">
+        <div class="card bg-white shadow-lg border-2 border-gray-300 card-hover" data-aos="fade-down-right"
+          data-aos-duration="800">
           <div class="card-body">
             <h3 class="card-title text-blue-900 text-lg mb-2">Membre d'Honneur</h3>
             <div class="text-3xl font-bold text-gray-400 mb-4">Sur invitation</div>
@@ -742,7 +768,8 @@
         </div>
 
         <!-- Partenaire -->
-        <div class="card bg-white shadow-lg border-2 border-gray-300 card-hover">
+        <div class="card bg-white shadow-lg border-2 border-gray-300 card-hover" data-aos="fade-down-left"
+          data-aos-duration="800">
           <div class="card-body">
             <h3 class="card-title text-blue-900 text-lg mb-2">Membre Partenaire</h3>
             <div class="text-3xl font-bold text-gray-400 mb-4">À discuter</div>
@@ -779,123 +806,167 @@
     </div>
   </section>
 
-  <!-- SECTION 8: FORMATIONS À VENIR -->
+  <!-- SECTION FORMATIONS -->
   <section id="formations" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
     <div class="max-w-7xl mx-auto">
-      <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Formations à Venir</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Formation 1 -->
-        <div class="card bg-white shadow-lg card-hover">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Nos Formations Professionnelles</h2>
+
+      <!-- CONTAINER DES FORMATIONS -->
+      <div id="formationsContainer" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- FORMATION 1 - VISIBLE PAR DÉFAUT -->
+        <div class="card bg-white shadow-lg card-hover formation-item" data-aos="fade-up" data-aos-duration="800">
           <div class="card-body">
-            <div class="badge badge-primary mb-4 flex gap-1 items-center bg-blue-500 text-white">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  d="M6 2a1 1 0 000 2h8a1 1 0 100-2H6zM4 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V5z">
-                </path>
-              </svg>
-              15 Août 2026
-            </div>
-            <h3 class="card-title text-blue-900 text-lg mb-4">Formation Web</h3>
-            <div class="space-y-2 mb-6 text-gray-600">
-              <p class="flex gap-2 items-center"><svg class="w-5 h-5 text-yellow-500" fill="currentColor"
-                  viewBox="0 0 20 20">
-                  <path
-                    d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v4h8v-4zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z">
-                  </path>
-                </svg><strong>15 places</strong> disponibles</p>
-              <p class="flex gap-2 items-center"><svg class="w-5 h-5 text-yellow-500" fill="currentColor"
-                  viewBox="0 0 20 20">
-                  <path
-                    d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z">
-                  </path>
-                </svg><strong>300$</strong> par personne</p>
-              <p class="flex gap-2 items-center"><svg class="w-5 h-5 text-yellow-500" fill="currentColor"
-                  viewBox="0 0 20 20">
-                  <path
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z">
-                  </path>
-                </svg><strong>40 heures</strong> de formation</p>
-            </div>
-            <button class="btn btn-warning w-full">S'inscrire</button>
+            <h3 class="card-title text-blue-900 text-lg mb-4">Métallurgie Inoxydable</h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Maîtrisez les techniques de soudure, de découpe et de façonnage de l'inox.
+              Formation pratique sur les équipements modernes pour créer des structures
+              métalliques durables et esthétiques.
+            </p>
+            <button class="btn btn-warning w-full">En savoir plus</button>
           </div>
         </div>
 
-        <!-- Formation 2 -->
-        <div class="card bg-white shadow-lg card-hover">
+        <!-- FORMATION 2 - VISIBLE PAR DÉFAUT -->
+        <div class="card bg-white shadow-lg card-hover formation-item" data-aos="fade-up" data-aos-duration="800">
           <div class="card-body">
-            <div class="badge badge-primary mb-4 flex gap-1 items-center bg-blue-500 text-white">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  d="M6 2a1 1 0 000 2h8a1 1 0 100-2H6zM4 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V5z">
-                </path>
-              </svg>
-              22 Août 2026
-            </div>
-            <h3 class="card-title text-blue-900 text-lg mb-4">Menuiserie Avancée</h3>
-            <div class="space-y-2 mb-6 text-gray-600">
-              <p class="flex gap-2 items-center"><svg class="w-5 h-5 text-yellow-500" fill="currentColor"
-                  viewBox="0 0 20 20">
-                  <path
-                    d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v4h8v-4zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z">
-                  </path>
-                </svg><strong>20 places</strong> disponibles</p>
-              <p class="flex gap-2 items-center"><svg class="w-5 h-5 text-yellow-500" fill="currentColor"
-                  viewBox="0 0 20 20">
-                  <path
-                    d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z">
-                  </path>
-                </svg><strong>250$</strong> par personne</p>
-              <p class="flex gap-2 items-center"><svg class="w-5 h-5 text-yellow-500" fill="currentColor"
-                  viewBox="0 0 20 20">
-                  <path
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z">
-                  </path>
-                </svg><strong>50 heures</strong> de formation</p>
-            </div>
-            <button class="btn btn-warning w-full">S'inscrire</button>
+            <h3 class="card-title text-blue-900 text-lg mb-4">Menuiserie en Aluminium</h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Apprenez à travailler l'aluminium pour fabriquer des portes, fenêtres et
+              structures modernes. Techniques de découpe, d'assemblage et de finition
+              pour des projets de qualité professionnelle.
+            </p>
+            <button class="btn btn-warning w-full">En savoir plus</button>
           </div>
         </div>
 
-        <!-- Formation 3 -->
-        <div class="card bg-white shadow-lg card-hover">
+        <!-- FORMATION 3 - VISIBLE PAR DÉFAUT -->
+        <div class="card bg-white shadow-lg card-hover formation-item" data-aos="fade-up" data-aos-duration="800">
           <div class="card-body">
-            <div class="badge badge-primary mb-4 flex gap-1 items-center bg-blue-500 text-white">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path
-                  d="M6 2a1 1 0 000 2h8a1 1 0 100-2H6zM4 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 01-2 2H6a2 2 0 01-2-2V5z">
-                </path>
-              </svg>
-              29 Août 2026
-            </div>
-            <h3 class="card-title text-blue-900 text-lg mb-4">Électricité Bâtiment</h3>
-            <div class="space-y-2 mb-6 text-gray-600">
-              <p class="flex gap-2 items-center"><svg class="w-5 h-5 text-yellow-500" fill="currentColor"
-                  viewBox="0 0 20 20">
-                  <path
-                    d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v4h8v-4zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z">
-                  </path>
-                </svg><strong>12 places</strong> disponibles</p>
-              <p class="flex gap-2 items-center"><svg class="w-5 h-5 text-yellow-500" fill="currentColor"
-                  viewBox="0 0 20 20">
-                  <path
-                    d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z">
-                  </path>
-                </svg><strong>280$</strong> par personne</p>
-              <p class="flex gap-2 items-center"><svg class="w-5 h-5 text-yellow-500" fill="currentColor"
-                  viewBox="0 0 20 20">
-                  <path
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 10.586V7z">
-                  </path>
-                </svg><strong>45 heures</strong> de formation</p>
-            </div>
-            <button class="btn btn-warning w-full">S'inscrire</button>
+            <h3 class="card-title text-blue-900 text-lg mb-4">Vitrage</h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Formation complète en installation et pose de vitrages. Maîtrise des
+              techniques de découpe, de scellage et de pose pour des portes et fenêtres
+              étanches et durables.
+            </p>
+            <button class="btn btn-warning w-full">En savoir plus</button>
           </div>
         </div>
+
+        <!-- FORMATION 4 - MASQUÉE PAR DÉFAUT -->
+        <div class="card bg-white shadow-lg card-hover formation-item hidden" id="formation-4" data-aos="fade-up"
+          data-aos-duration="800">
+          <div class="card-body">
+            <h3 class="card-title text-blue-900 text-lg mb-4">Ébénisterie Moderne</h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Découvrez les techniques modernes de menuiserie fine. Création de meubles
+              sur mesure, utilisation du bois noble et des technologies contemporaines
+              pour des finitions exceptionnelles.
+            </p>
+            <button class="btn btn-warning w-full">En savoir plus</button>
+          </div>
+        </div>
+
+        <!-- FORMATION 5 - MASQUÉE PAR DÉFAUT -->
+        <div class="card bg-white shadow-lg card-hover formation-item hidden" id="formation-5" data-aos="fade-up"
+          data-aos-duration="800">
+          <div class="card-body">
+            <h3 class="card-title text-blue-900 text-lg mb-4">Peinture et Fabrication</h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Formation en peinture intérieure et extérieure de qualité. Maîtrise des
+              techniques d'application, de préparation des surfaces et utilisation des
+              peintures haute performance.
+            </p>
+            <button class="btn btn-warning w-full">En savoir plus</button>
+          </div>
+        </div>
+
+        <!-- FORMATION 6 - MASQUÉE PAR DÉFAUT -->
+        <div class="card bg-white shadow-lg card-hover formation-item hidden" id="formation-6" data-aos="fade-up"
+          data-aos-duration="800">
+          <div class="card-body">
+            <h3 class="card-title text-blue-900 text-lg mb-4">Fabrication de Meubles</h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Apprenez à concevoir et fabriquer des meubles modernes. De la conception
+              à la finition, en passant par le choix des matériels et les techniques
+              d'assemblage professionnel.
+            </p>
+            <button class="btn btn-warning w-full">En savoir plus</button>
+          </div>
+        </div>
+
+        <!-- FORMATION 7 - MASQUÉE PAR DÉFAUT -->
+        <div class="card bg-white shadow-lg card-hover formation-item hidden" id="formation-7" data-aos="fade-up"
+          data-aos-duration="800">
+          <div class="card-body">
+            <h3 class="card-title text-blue-900 text-lg mb-4">Forages</h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Formation spécialisée en forage de puits et hydrogéologie. Techniques de
+              forage, installation de pompes et maintenance des systèmes d'eau pour les
+              particuliers et entreprises.
+            </p>
+            <button class="btn btn-warning w-full">En savoir plus</button>
+          </div>
+        </div>
+
       </div>
+
+      <!-- BOUTON "VOIR TOUTES LES FORMATIONS" -->
       <div class="text-center mt-12">
-        <a href="#contact" class="text-yellow-500 font-semibold hover:underline text-lg">Voir toutes les formations
-          →</a>
+        <button id="toggleBtn" class="btn btn-lg btn-outline btn-primary">
+          Voir toutes les formations
+        </button>
       </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION PARTENAIRES - CARROUSEL -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Nos Partenaires</h2>
+
+      <!-- CARROUSEL -->
+      <div class="carousel carousel-center rounded-box bg-gray-100 p-8 space-x-4 w-full">
+
+        <!-- PARTENAIRE 1 -->
+        <div class="carousel-item w-40 h-40 flex items-center justify-center">
+          <img src="assets/img/partenaire1.png" alt="ANADEC" class="w-32 h-32 partner-logo object-contain">
+        </div>
+
+        <!-- PARTENAIRE 2 -->
+        <div class="carousel-item w-40 h-40 flex items-center justify-center">
+          <img src="assets/img/partenaire2.png" alt="FOGEC" class="w-32 h-32 partner-logo object-contain">
+        </div>
+
+        <!-- PARTENAIRE 3 -->
+        <div class="carousel-item w-40 h-40 flex items-center justify-center">
+          <img src="assets/img/partenaire3.jpeg" alt="Ministère Formation"
+            class="w-32 h-32 partner-logo object-contain">
+        </div>
+
+        <!-- PARTENAIRE 4 -->
+        <div class="carousel-item w-40 h-40 flex items-center justify-center">
+          <img src="assets/img/partenaire4.jpeg" alt="Ministère Industrie"
+            class="w-32 h-32 partner-logo object-contain">
+        </div>
+
+        <!-- PARTENAIRE 5 -->
+        <div class="carousel-item w-40 h-40 flex items-center justify-center">
+          <img src="assets/img/partenaire5.jpeg" alt="Ministère Entrepreneuriat"
+            class="w-32 h-32 partner-logo object-contain">
+        </div>
+
+      </div>
+
+      <!-- BOUTONS NAVIGATION CARROUSEL -->
+      <div class="flex justify-center gap-4 mt-8">
+        <button class="btn btn-sm btn-outline"
+          onclick="document.querySelector('.carousel').scrollLeft -= 200">❮</button>
+        <button class="btn btn-sm btn-outline"
+          onclick="document.querySelector('.carousel').scrollLeft += 200">❯</button>
+      </div>
+
     </div>
   </section>
 
@@ -927,7 +998,7 @@
         </a>
       </div>
       <p class="text-yellow-500 font-semibold text-lg">
-        Ou appelez-nous : <a href="tel:+243818762129" class="hover:underline">+243 81 87 62 129</a>
+        Ou appelez-nous : <a href="tel:+243980579475" class="hover:underline">+243 98 05 79 475</a>
       </p>
     </div>
   </section>
@@ -999,39 +1070,38 @@
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-12">Nous Contacter</h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+
         <!-- Formulaire -->
         <div class="bg-white rounded-lg shadow-lg p-8">
           <h3 class="text-2xl font-bold text-blue-900 mb-6">Envoyez-nous un Message</h3>
-          <form class="space-y-4">
+
+      
+          <form id="whatsappForm" class="space-y-4" onsubmit="sendToWhatsApp(event)">
             <div>
               <label class="label"><span class="label-text text-blue-900 font-semibold">Nom complet</span></label>
-              <input type="text" placeholder="Votre nom" class="input input-bordered w-full bg-blue-50" />
+              <input type="text" id="name" placeholder="Votre nom" class="input input-bordered w-full bg-blue-50"
+                required />
             </div>
-            <div>
-              <label class="label"><span class="label-text text-blue-900 font-semibold">Email</span></label>
-              <input type="email" placeholder="votre@email.com" class="input input-bordered w-full bg-blue-50" />
-            </div>
-            <div>
-              <label class="label"><span class="label-text text-blue-900 font-semibold">Téléphone</span></label>
-              <input type="tel" placeholder="+243 ..." class="input input-bordered w-full bg-blue-50" />
-            </div>
+
             <div>
               <label class="label"><span class="label-text text-blue-900 font-semibold">Message</span></label>
-              <textarea placeholder="Votre message..."
-                class="textarea textarea-bordered w-full h-32 bg-blue-50"></textarea>
+          
+              <textarea id="message" placeholder="Votre message..."
+                class="textarea textarea-bordered w-full h-32 bg-blue-50" required></textarea>
             </div>
+
             <button type="submit" class="btn btn-gold w-full flex items-center justify-center gap-2 text-yellow-500">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                 <path
                   d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5.951-1.488 5.951 1.488a1 1 0 001.169-1.409l-7-14z">
                 </path>
               </svg>
-              Envoyer
+              Envoyer sur WhatsApp
             </button>
           </form>
         </div>
 
-        <!-- Infos Contact -->
+        <!-- Infos Contact (Unchanged) -->
         <div class="space-y-8">
           <div class="bg-white rounded-lg shadow-lg p-8">
             <h3 class="text-2xl font-bold text-blue-900 mb-6">Nos Coordonnées</h3>
@@ -1082,28 +1152,12 @@
               </div>
             </div>
           </div>
-
-          <!-- Newsletter -->
-          <!--<div class="bg-blue-900 rounded-lg shadow-lg p-8">
-            <h3 class="text-2xl font-bold text-yellow-500 mb-4">Restez à l'Écoute</h3>
-            <p class="text-gray-300 mb-6">Recevez nos actualités, offres et success stories directement dans votre
-              email.</p>
-            <form class="space-y-3">
-              <input type="email" placeholder="votre@email.com" class="input input-bordered w-full text-black" />
-              <button type="submit" class="btn btn-warning w-full flex items-center justify-center gap-2">
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5.951-1.488 5.951 1.488a1 1 0 001.169-1.409l-7-14z">
-                  </path>
-                </svg>
-                S'inscrire
-              </button>
-            </form>
-          </div>-->
         </div>
       </div>
     </div>
   </section>
+
+  <!-- JavaScript to Handle WhatsApp Submission -->
 
   <!-- FOOTER -->
   <footer class="bg-blue-900 text-white py-12 px-4 sm:px-6 lg:px-8">
@@ -1132,7 +1186,7 @@
         </div>
 
         <!-- Adhésion -->
-        <div>
+        <!--<div>
           <h3 class="font-bold text-yellow-500 text-lg mb-4">Adhésion</h3>
           <ul class="space-y-2 text-gray-400 text-sm">
             <li><a href="#adhesion" class="hover:text-yellow-500">Types de membres</a></li>
@@ -1140,7 +1194,7 @@
             <li><a href="#" class="hover:text-yellow-500">FAQ</a></li>
             <li><a href="#contact" class="hover:text-yellow-500">Nous contacter</a></li>
           </ul>
-        </div>
+        </div>-->
 
         <!-- Légal -->
         <!-- <div>
@@ -1256,6 +1310,50 @@
 
     observer.observe(document.querySelector("#stats"));
 
+    //section formations 
+
+    const toggleBtn = document.getElementById('toggleBtn');
+    const hiddenFormations = document.querySelectorAll('.formation-item.hidden');
+    let allVisible = false;
+
+    toggleBtn.addEventListener('click', function () {
+      allVisible = !allVisible;
+
+      // Afficher/masquer les formations cachées
+      hiddenFormations.forEach(formation => {
+        if (allVisible) {
+          formation.classList.remove('hidden');
+        } else {
+          formation.classList.add('hidden');
+        }
+      });
+
+      // Changer le texte du bouton
+      toggleBtn.textContent = allVisible ? 'Masquer les formations' : 'Voir toutes les formations';
+    });
+
+
+    //formulaire whatsapp
+    function sendToWhatsApp(event) {
+      event.preventDefault(); // Prevent standard form submission
+
+      // 1. Get values from inputs
+      const name = document.getElementById('name').value;
+      const message = document.getElementById('message').value;
+
+      // 2. Define your WhatsApp number (International format without '+' or spaces)
+      // Example: For +243 81 87 62 129, use '243818762129'
+      const phoneNumber = "243818762129";
+
+      // 3. Format the message with line breaks (%0a)
+      const text = `*Nouveau message du site web*%0a%0a*Nom:* ${name}%0a*Message:* ${message}`;
+
+      // 4. Create the WhatsApp URL
+      const url = `https://wa.me/${phoneNumber}?text=${text}`;
+
+      // 5. Open WhatsApp in a new tab
+      window.open(url, '_blank');
+    }
   </script>
 </body>
 
