@@ -27,10 +27,13 @@
 
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
     }
 
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      width: 100%;
     }
 
     .btn-primary {
@@ -112,7 +115,7 @@
 <body class="bg-white">
 
   <!-- NAVIGATION HEADER -->
-  <header class="sticky top-0 z-50 bg-navy shadow-lg">
+  <header class="sticky top-0 z-50 bg-navy shadow-lg overflow-hidden">
     <nav class="navbar max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Logo -->
       <div class="navbar-start">
@@ -215,7 +218,7 @@
   </section>
 
   <!-- SECTION 3: QUI SOMMES-NOUS -->
-  <section id="qui-sommes-nous" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  <section id="qui-sommes-nous" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">580!:×, nbvc
     <div class="max-w-6xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
@@ -243,6 +246,18 @@
               qualifiés, professionnels et fiables, capables de réaliser des projets
               aux normes internationales.</p>
           </div>
+          <div class="bg-blue-50 border-r-4 border-yellow-500 p-6 my-6" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-blue-900 font-semibold mb-2">Équipements & Approvisionnement :</p>
+            <p class="text-gray-700">Développer un réseau d'approvisionnement performant en équipements techniques de qualité et accompagner la modernisation des outils de travail grâce à des partenariats stratégiques, notamment avec la Chine, afin de garantir des solutions fiables, innovantes et conformes aux standards internationaux.</p> 
+          </div>
+          <div class="bg-blue-50 border-l-4 border-yellow-500 p-6 my-6" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-blue-900 font-semibold mb-2">Impact socio-économique</p>
+            <p class="text-gray-700">Contribuer au développement durable de la RDC en favorisant la création d'emplois, l'industrialisation locale, la production de richesse et le renforcement des communautés, tout en soutenant l'émergence d'une économie fondée sur les compétences, l'innovation et l'entrepreneuriat.</p>
+          </div>
+          <div class="bg-blue-50 border-r-4 border-yellow-500 p-6 my-6" data-aos="fade-up" data-aos-delay="200">
+            <p class="text-blue-900 font-semibold mb-2">Inclusion des personnes vivant avec handicap :</p>
+            <p class="text-gray-700">Favoriser l'inclusion des personnes vivant avec handicap dans les métiers techniques en adaptant les outils de travail et les tâches à leurs aptitudes, afin de promouvoir l'égalité des chances, l'autonomie et l'accès à un emploi digne.</p>
+          </div>
           <div class="grid grid-cols-3 gap-4 mt-8" data-aos="fade-up" data-aos-delay="300">
             <div class="text-center">
               <svg class="icon-lg text-yellow-500 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
@@ -267,6 +282,7 @@
           </div>
         </div>
       </div>
+      
     </div>
   </section>
 
@@ -343,7 +359,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
         <!-- Carte 1 -->
-        <div class="card bg-white shadow-lg card-hover " data-aos="zoom-in-left" data-aos-duration="800">
+        <div class="card bg-white shadow-lg card-hover min-h-[400px] " data-aos="zoom-in-left" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service_1.jpg" alt="Conception et étude" />
           </figure>
@@ -362,7 +378,7 @@
         </div>
 
         <!-- Carte 2 -->
-        <div class="card bg-white shadow-lg card-hover" data-aos="zoom-in-right" data-aos-duration="800">
+        <div class="card bg-white shadow-lg card-hover min-h-[400px]" data-aos="zoom-in-right" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service_2.jpg" alt="Entrepreneur" />
           </figure>
@@ -381,7 +397,7 @@
         </div>
 
         <!-- Carte 3 -->
-        <div class="card bg-white shadow-lg card-hover" data-aos="zoom-in-left" data-aos-duration="800">
+        <div class="card bg-white shadow-lg card-hover min-h-[400px]" data-aos="zoom-in-left" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service3.avif" alt="Second oeuvre" />
           </figure>
@@ -399,7 +415,7 @@
         </div>
 
         <!-- Carte 4 -->
-        <div class="card bg-white shadow-lg card-hover" data-aos="zoom-in-right" data-aos-duration="800">
+        <div class="card bg-white shadow-lg card-hover min-h-[400px]" data-aos="zoom-in-right" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service_4.jpg" alt="Décoration" />
           </figure>
@@ -418,7 +434,7 @@
         </div>
 
         <!-- Carte 5 -->
-        <div class="card bg-white shadow-lg card-hover" data-aos="zoom-in-left" data-aos-duration="800">
+        <div class="card bg-white shadow-lg card-hover min-h-[400px]" data-aos="zoom-in-left" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service_5.jpg" alt="Fabrication & ameublement" />
           </figure>
@@ -436,7 +452,7 @@
         </div>
 
         <!-- Carte 6 -->
-        <div class="card bg-white shadow-lg card-hover" data-aos="zoom-in-right" data-aos-duration="800">
+        <div class="card bg-white shadow-lg card-hover min-h-[400px]" data-aos="zoom-in-right" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service_6.jpeg" alt="Métallurgie" />
           </figure>
@@ -453,7 +469,7 @@
         </div>
 
         <!-- Carte 7 -->
-        <div class="card bg-white shadow-lg card-hover" data-aos="zoom-in-left" data-aos-duration="800">
+        <div class="card bg-white shadow-lg card-hover min-h-[400px]" data-aos="zoom-in-left" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service_7.webp" alt="Maintenance & rénovation" />
           </figure>
@@ -471,7 +487,7 @@
         </div>
 
         <!-- Carte 8 -->
-        <div class="card bg-white shadow-lg card-hover" data-aos="zoom-in-right" data-aos-duration="800">
+        <div class="card bg-white shadow-lg card-hover min-h-[400px]" data-aos="zoom-in-right" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service_8.jpg" alt="Forages d'eau" />
           </figure>
@@ -488,7 +504,7 @@
         </div>
 
         <!-- Carte 9-->
-        <div class="card bg-white shadow-lg card-hover" data--aos="zoom-in-left" data-aos-duration="800">
+        <div class="card bg-white shadow-lg card-hover min-h-[400px]" data--aos="zoom-in-left" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service_9.jpeg" alt="Fabrication de briques, pavés et blocs" />
           </figure>
@@ -505,7 +521,7 @@
         </div>
 
         <!-- Carte 10 -->
-        <div class="card bg-white shadow-lg card-hover" data--aos="zoom-in-right" data-aos-duration="800">
+        <div class="card bg-white shadow-lg card-hover min-h-[400px]" data--aos="zoom-in-right" data-aos-duration="800">
           <figure>
             <img src="./assets/img/service_10.jpg" alt="Fabrication de peintures" />
           </figure>
@@ -520,6 +536,8 @@
             <a href="#contact" class="text-yellow-500 font-semibold text-sm hover:underline">En savoir plus →</a>
           </div>
         </div>
+
+        
       </div>
     </div>
   </section>
@@ -909,6 +927,20 @@
           </div>
         </div>
 
+        <!-- FORMATION 7  -->
+        <div class="card bg-white shadow-lg card-hover formation-item hidden" id="formation-7" data-aos="fade-up"
+          data-aos-duration="800">
+          <div class="card-body">
+            <h3 class="card-title text-blue-900 text-lg mb-4">Carelages marbres</h3>
+            <p class="text-gray-600 text-sm mb-6">
+              Formation spécialisée en forage de puits et hydrogéologie. Techniques de
+              forage, installation de pompes et maintenance des systèmes d'eau pour les
+              particuliers et entreprises.
+            </p>
+            <button class="btn btn-warning w-full">En savoir plus</button>
+          </div>
+        </div>
+
       </div>
 
       <!-- BOUTON "VOIR TOUTES LES FORMATIONS" -->
@@ -927,7 +959,7 @@
       <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Nos Partenaires</h2>
 
       <!-- CARROUSEL -->
-      <div class="carousel carousel-center rounded-box bg-gray-100 p-8 space-x-4 w-full">
+      <div class="carousel carousel-center rounded-box bg-gray-100 p-8 space-x-4 w-full overflow-x-auto">
 
         <!-- PARTENAIRE 1 -->
         <div class="carousel-item w-40 h-40 flex items-center justify-center">
@@ -957,19 +989,55 @@
             class="w-32 h-32 partner-logo object-contain">
         </div>
 
-      </div>
+         <!-- PARTENAIRE 6 -->
+        <div class="carousel-item w-40 h-40 flex items-center justify-center">
+          <img src="assets/img/partenaire6.jpeg" alt="Ministère de l'entrepreneuriat"
+            class="w-32 h-32 partner-logo object-contain">
+        </div>
 
-      <!-- BOUTONS NAVIGATION CARROUSEL -->
-      <div class="flex justify-center gap-4 mt-8">
-        <button class="btn btn-sm btn-outline"
-          onclick="document.querySelector('.carousel').scrollLeft -= 200">❮</button>
-        <button class="btn btn-sm btn-outline"
-          onclick="document.querySelector('.carousel').scrollLeft += 200">❯</button>
       </div>
 
     </div>
   </section>
 
+    <!-- SECTION CLIENT - CARROUSEL -->
+  <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Nos Clients</h2>
+
+      <!-- CARROUSEL -->
+      <div class="carousel carousel-center rounded-box bg-gray-100 p-8 space-x-4 w-full overflow-x-auto">
+
+        <!-- CLIENT 1 -->
+        <div class="carousel-item w-40 h-40 flex items-center justify-center">
+          <img src="assets/img/client1.jpeg" alt="CNSS" class="w-32 h-32 partner-logo object-contain">
+        </div>
+
+        <!-- CLIENT 2 -->
+        <div class="carousel-item w-40 h-40 flex items-center justify-center">
+          <img src="assets/img/client2.webp" alt="SNEL" class="w-32 h-32 partner-logo object-contain">
+        </div>
+
+        <!-- CLIENT 3 -->
+        <div class="carousel-item w-40 h-40 flex items-center justify-center">
+          <img src="assets/img/client3.jpeg" alt="SONAS"
+            class="w-32 h-32 partner-logo object-contain">
+        </div>
+
+      
+
+        <!-- CLIENT 5 -->
+        <div class="carousel-item w-40 h-40 flex items-center justify-center">
+          <img src="assets/img/client5.png" alt="Ministère Entrepreneuriat"
+            class="w-32 h-32 partner-logo object-contain">
+        </div>
+      </div>
+
+      
+
+    </div>
+  </section>
+  
   <!-- SECTION 10: CTA PRINCIPAL -->
   <section class="py-20 px-4 sm:px-6 lg:px-8 bg-navy">
     <div class="max-w-4xl mx-auto text-center">
@@ -1075,7 +1143,7 @@
         <div class="bg-white rounded-lg shadow-lg p-8">
           <h3 class="text-2xl font-bold text-blue-900 mb-6">Envoyez-nous un Message</h3>
 
-      
+
           <form id="whatsappForm" class="space-y-4" onsubmit="sendToWhatsApp(event)">
             <div>
               <label class="label"><span class="label-text text-blue-900 font-semibold">Nom complet</span></label>
@@ -1085,7 +1153,7 @@
 
             <div>
               <label class="label"><span class="label-text text-blue-900 font-semibold">Message</span></label>
-          
+
               <textarea id="message" placeholder="Votre message..."
                 class="textarea textarea-bordered w-full h-32 bg-blue-50" required></textarea>
             </div>
