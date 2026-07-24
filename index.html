@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="./dist/output.css" />
   <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
-  <script src="./node_modules/aos/dist/aos.js" defer></script>
+  <script src="./node_modules/aos/dist/aos.js" ></script>
 
   <meta name="google-site-verification" content="IBq9v1BDwyI85u-xqtBVQgZIIPQ5nh9nZSrBAiFE8iY" />
 
@@ -24,13 +24,12 @@
 
     html {
       scroll-behavior: smooth;
-      overflow-x: hidden;
     }
 
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
-      overflow-x: hidden;
       width: 100%;
+      -webkit-font-smoothing: antialiased;
     }
 
     .btn-primary {
@@ -112,7 +111,7 @@
 <body class="bg-white" >
 
   <!-- NAVIGATION HEADER -->
-  <header class="sticky top-0 z-50 bg-navy shadow-lg overflow-hidden">
+  <header class="fixed top-0 left-0 right-0 z-50 bg-navy shadow-lg">
     <nav class="navbar max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Logo -->
       <div class="navbar-start">
@@ -163,7 +162,7 @@
       loading="lazy">
     </div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center pt-20">
       <h1 class="text-4xl sm:text-3xl lg:text-6xl font-bold text-white mb-6 fade-in">
         Ensemble pour l'Excellence et le Développement
       </h1>
