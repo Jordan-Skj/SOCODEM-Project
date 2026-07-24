@@ -1,0 +1,26 @@
+{
+  "name": "socotem-website",
+  "version": "1.0.0",
+  "description": "Site web de présentation SOCOTEM COOP-CA",
+  "main": "index.html",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [
+    "socotem",
+    "tailwind",
+    "daisyui"
+  ],
+  "author": "JorkaDev",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "daisyui": "^4.11.1",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy: #070D1F;
+  --color-cobalt: #1E6FFF;
+  --color-gold: #FFB800;
+  --color-light: #F8F8F8;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.btn-primary {
+  @apply bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-bold py-3 px-8 rounded-lg transition;
+}
+
+.btn-secondary {
+  @apply border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-blue-900 font-bold py-3 px-8 rounded-lg transition;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(30, 111, 255, 0.1);
+}
+
+.text-gold {
+  color: #FFB800;
+}
+
+.bg-navy {
+  background-color: #070D1F;
+}
+
+svg.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+svg.icon-lg {
+  width: 32px;
+  height: 32px;
+}
+
+svg.icon-xl {
+  width: 48px;
+  height: 48px;
+}
+
+.partner-logo {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.carousel-item {
+  flex-shrink: 0;
+}

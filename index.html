@@ -8,14 +8,10 @@
   <meta name="description"
     content="Rejoignez SOCOTEM, une coopérative de techniciens modernes à Kinshasa. Formation, incubation, accompagnement entrepreneurial.">
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
+  <script src="./node_modules/aos/dist/aos.js" defer></script>
 
-  <!-- DaisyUI -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
-
-  <!-- Animation -->
-  <link rel="stylesheet" href="assets/animation/aos-master/dist/aos.css" />
   <meta name="google-site-verification" content="IBq9v1BDwyI85u-xqtBVQgZIIPQ5nh9nZSrBAiFE8iY" />
 
   <style>
@@ -113,7 +109,7 @@
   </style>
 </head>
 
-<body class="bg-white">
+<body class="bg-white" >
 
   <!-- NAVIGATION HEADER -->
   <header class="sticky top-0 z-50 bg-navy shadow-lg overflow-hidden">
@@ -163,7 +159,8 @@
   <section id="hero" class="relative min-h-screen bg-cover bg-center flex items-center"
     style="background: linear-gradient(135deg, #070D1F 0%, #1E6FFF 100%);">
     <div class="absolute inset-0 opacity-30"
-      style="background-image: url('./pexels-photo-3818947.webp'); background-repeat: no-repeat; background-size: cover;" loading="lazy">
+      style="background-image: url('./pexels-photo-3818947.webp'); background-repeat: no-repeat; background-size: cover;"
+      loading="lazy">
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
@@ -223,8 +220,8 @@
     <div class="max-w-6xl mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div>
-          <img loading="lazy" src="./atelier.webp" alt="Ateliers SOCOTEM" class="rounded-lg shadow-lg w-full" data-aos="zoom-in"
-            data-aos-duration="800">
+          <img loading="lazy" src="./atelier.webp" alt="Ateliers SOCOTEM" class="rounded-lg shadow-lg w-full"
+            data-aos="zoom-in" data-aos-duration="800">
         </div>
         <div>
           <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-blue-900 mb-6" data-aos="fade-up">La Plateforme
@@ -249,15 +246,22 @@
           </div>
           <div class="bg-blue-50 border-r-4 border-yellow-500 p-6 my-6" data-aos="fade-up" data-aos-delay="200">
             <p class="text-blue-900 font-semibold mb-2">Équipements & Approvisionnement :</p>
-            <p class="text-gray-700">Développer un réseau d'approvisionnement performant en équipements techniques de qualité et accompagner la modernisation des outils de travail grâce à des partenariats stratégiques, notamment avec la Chine, afin de garantir des solutions fiables, innovantes et conformes aux standards internationaux.</p> 
+            <p class="text-gray-700">Développer un réseau d'approvisionnement performant en équipements techniques de
+              qualité et accompagner la modernisation des outils de travail grâce à des partenariats stratégiques,
+              notamment avec la Chine, afin de garantir des solutions fiables, innovantes et conformes aux standards
+              internationaux.</p>
           </div>
           <div class="bg-blue-50 border-l-4 border-yellow-500 p-6 my-6" data-aos="fade-up" data-aos-delay="200">
             <p class="text-blue-900 font-semibold mb-2">Impact socio-économique</p>
-            <p class="text-gray-700">Contribuer au développement durable de la RDC en favorisant la création d'emplois, l'industrialisation locale, la production de richesse et le renforcement des communautés, tout en soutenant l'émergence d'une économie fondée sur les compétences, l'innovation et l'entrepreneuriat.</p>
+            <p class="text-gray-700">Contribuer au développement durable de la RDC en favorisant la création d'emplois,
+              l'industrialisation locale, la production de richesse et le renforcement des communautés, tout en
+              soutenant l'émergence d'une économie fondée sur les compétences, l'innovation et l'entrepreneuriat.</p>
           </div>
           <div class="bg-blue-50 border-r-4 border-yellow-500 p-6 my-6" data-aos="fade-up" data-aos-delay="200">
             <p class="text-blue-900 font-semibold mb-2">Inclusion des personnes vivant avec handicap :</p>
-            <p class="text-gray-700">Favoriser l'inclusion des personnes vivant avec handicap dans les métiers techniques en adaptant les outils de travail et les tâches à leurs aptitudes, afin de promouvoir l'égalité des chances, l'autonomie et l'accès à un emploi digne.</p>
+            <p class="text-gray-700">Favoriser l'inclusion des personnes vivant avec handicap dans les métiers
+              techniques en adaptant les outils de travail et les tâches à leurs aptitudes, afin de promouvoir l'égalité
+              des chances, l'autonomie et l'accès à un emploi digne.</p>
           </div>
           <div class="grid grid-cols-3 gap-4 mt-8" data-aos="fade-up" data-aos-delay="300">
             <div class="text-center">
@@ -283,7 +287,7 @@
           </div>
         </div>
       </div>
-      
+
     </div>
   </section>
 
@@ -538,7 +542,7 @@
           </div>
         </div>
 
-        
+
       </div>
     </div>
   </section>
@@ -807,7 +811,9 @@
           <div class="card-body">
             <h3 class="card-title text-blue-900 text-lg mb-4">Carelages marbres</h3>
             <p class="text-gray-600 text-sm mb-6">
-                Développez des compétences pratiques en pose de carrelage et de marbre : lecture de plans, prise de mesures, découpe précise, installation, finitions et entretien des revêtements. Une formation adaptée aux débutants comme aux professionnels souhaitant se perfectionner.
+              Développez des compétences pratiques en pose de carrelage et de marbre : lecture de plans, prise de
+              mesures, découpe précise, installation, finitions et entretien des revêtements. Une formation adaptée aux
+              débutants comme aux professionnels souhaitant se perfectionner.
             </p>
             <button class="btn btn-warning w-full">En savoir plus</button>
           </div>
@@ -835,12 +841,14 @@
 
         <!-- PARTENAIRE 1 -->
         <div class="carousel-item w-40 h-40 flex items-center justify-center">
-          <img loading="lazy" src="assets/img/partenaire1.png" alt="ANADEC" class="w-32 h-32 partner-logo object-contain">
+          <img loading="lazy" src="assets/img/partenaire1.png" alt="ANADEC"
+            class="w-32 h-32 partner-logo object-contain">
         </div>
 
         <!-- PARTENAIRE 2 -->
         <div class="carousel-item w-40 h-40 flex items-center justify-center">
-          <img loading="lazy" src="assets/img/partenaire2.png" alt="FOGEC" class="w-32 h-32 partner-logo object-contain">
+          <img loading="lazy" src="assets/img/partenaire2.png" alt="FOGEC"
+            class="w-32 h-32 partner-logo object-contain">
         </div>
 
         <!-- PARTENAIRE 3 -->
@@ -861,21 +869,23 @@
             class="w-32 h-32 partner-logo object-contain">
         </div>
 
-         <!-- PARTENAIRE 6 -->
+        <!-- PARTENAIRE 6 -->
         <div class="carousel-item w-40 h-40 flex items-center justify-center">
           <img loading="lazy" src="assets/img/partenaire6.jpeg" alt="Ministère de l'entrepreneuriat"
             class="w-32 h-32 partner-logo object-contain">
         </div>
 
         <div class="carousel-item w-40 h-40 flex items-center justify-center">
-          <img loading="lazy" src="assets/img/partenaire_11.jpeg" alt="Ministère en charge des personnes vivant avec handicap et autres personnes vulnérables" class="w-60 h-32 partner-logo object-contain">
+          <img loading="lazy" src="assets/img/partenaire_11.jpeg"
+            alt="Ministère en charge des personnes vivant avec handicap et autres personnes vulnérables"
+            class="w-60 h-32 partner-logo object-contain">
         </div>
       </div>
 
     </div>
   </section>
 
-    <!-- SECTION CLIENT - CARROUSEL -->
+  <!-- SECTION CLIENT - CARROUSEL -->
   <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
     <div class="max-w-7xl mx-auto">
       <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-900 mb-16">Nos Clients</h2>
@@ -895,11 +905,10 @@
 
         <!-- CLIENT 3 -->
         <div class="carousel-item w-40 h-40 flex items-center justify-center">
-          <img loading="lazy" src="assets/img/client3.jpeg" alt="SONAS"
-            class="w-32 h-32 partner-logo object-contain">
+          <img loading="lazy" src="assets/img/client3.jpeg" alt="SONAS" class="w-32 h-32 partner-logo object-contain">
         </div>
 
-      
+
 
         <!-- CLIENT 5 -->
         <div class="carousel-item w-40 h-40 flex items-center justify-center">
@@ -908,11 +917,11 @@
         </div>
       </div>
 
-      
+
 
     </div>
   </section>
-  
+
   <!-- SECTION 10: CTA PRINCIPAL -->
   <section class="py-20 px-4 sm:px-6 lg:px-8 bg-navy">
     <div class="max-w-4xl mx-auto text-center">
