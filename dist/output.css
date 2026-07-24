@@ -2836,6 +2836,10 @@ details.collapse summary::-webkit-details-marker {
   visibility: collapse;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -2854,6 +2858,14 @@ details.collapse summary::-webkit-details-marker {
 
 .top-0 {
   top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .z-10 {
@@ -3425,6 +3437,10 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 1.25rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -3523,6 +3539,11 @@ details.collapse summary::-webkit-details-marker {
 .text-yellow-500 {
   --tw-text-opacity: 1;
   color: rgb(234 179 8 / var(--tw-text-opacity, 1));
+}
+
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .opacity-30 {
